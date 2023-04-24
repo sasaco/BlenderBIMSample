@@ -3,16 +3,8 @@
 import bpy
 import random
 
-
-NUM_X = 4
+NUM_X = 7
 NUM_Y = 7
-
-
-def delete_all():
-  for item in bpy.data.meshes:
-    bpy.data.meshes.remove(item)
-  for item in bpy.data.materials:
-    bpy.data.materials.remove(item)
 
 def make_sphere(x,y,z):
   loc = (x,y,z)
@@ -37,5 +29,4 @@ def make_material(name,color):
   return ma
 
 if __name__ == "__main__":
-  delete_all()    
   make_spheres(NUM_X,NUM_Y)

@@ -4,7 +4,7 @@ import bpy
 import random
 
 
-NUM_X = 4
+NUM_X = 7
 NUM_Y = 7
 
 
